@@ -15,28 +15,109 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+ 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>  
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script> 
+		
+		<script type="text/javascript">                                         
+    		$(function() {
+    		    $("#navigationBarList li a").hover(
+    		        function() {
+    		            $(this).animate({ color: "#2777EC" }, 'slow');
+    		        },function() {
+    		            $(this).animate({ color: "#FFFFFF" }, 'slow');
+    		    });
+    		});
+
+    		$(function() {
+   				window.scrollTo(0,0);
+			});
+
+
+
+
+
+		</script>  
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+
+		</script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+        <!-- Add your site or application content here -->        		     
+        <div id="wrapper">     
+        	<header>
+        		<div id="navigationBar">
+        			<ul id="navigationBarList">
+        				<li id="headerTitle">SN</li>
+        				<li><a href="#about">About</a></li>
+        				<li><a href="#wrapper">Portfolio</a></li>
+        				<li><a href="">Contact!</a></li>
+        			</ul>
+        		</div>
+
+
+  
+        
+        	</header>
+
+        	<body>
+        		<div id="bodyWrapper">	
+        			<div id="intro">
+	
+	
+        				<h1>Samy Narrainen</h1>
+        				<p>
+        					aspiring software developer
+						</p>
+        			</div>
+	
+        			<div id="about">
+        				<p>test text</p>
+        			</div>
+        		</div>
+
+        		<div id="test">lol</div>
+        	</body>
+
+        	<footer>
+        		
+        	</footer>
+
+        	
+
+        </div>
+
+
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+
+
+		<!--
+	 Dark denim: Atle Mo
+
+		Dark Sharp Edges: Carlos Aguilar: http://creativecommons.org/licenses/by-sa/3.0/ -->
     </body>
 </html>
