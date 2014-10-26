@@ -15,51 +15,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
- 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script> 
-		
-		<script type="text/javascript">                                         
-    		$(function() {
-    		    $("#navigationBarList li a").hover(
-    		        function() {
-    		            $(this).animate({ color: "#2777EC" }, 'slow');
-    		        },function() {
-    		            $(this).animate({ color: "#FFFFFF" }, 'slow');
-    		    });
-    		});
-
-    		$(function() {
-   				window.scrollTo(0,0);
-			});
-
-		$(document).ready(function(){
-			$('a[href^="#"]').on('click',function (e) {
-	   			e.preventDefault();
-
-	    		var target = this.hash;
-	   			$target = $(target);
-
-	    		$('html, body').stop().animate({
-	        		'scrollTop': $target.offset({}).top
-	    		}, 900, 'swing', function () {
-	        		window.location.hash = target;
-	    		});
-
-	    		$('html, body').stop().animate({
-     				'scrollTop': $target.offset().top
-				}, 900, 'swing');
-
-
-
-			});
-		});
-
-		</script>  
-
-
-
-
-
+ 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script> 
     </head>
     <body>
         <!--[if lt IE 7]>
