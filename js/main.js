@@ -10,14 +10,12 @@ $(function() {
 
 $(function() {
 	window.scrollTo(0,0);
-	$("body").fadeIn("slow");
 });
 
-$(function() {
-	$(document).tooltip();
-});
 
 $(document).ready(function(){
+	$("#wrapper").fadeIn("slow");
+
 	$('a[href^="#"]').on('click',function (e) {
 		e.preventDefault();
 
