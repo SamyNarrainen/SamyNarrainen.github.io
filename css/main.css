@@ -118,7 +118,6 @@ header {
     position: fixed;
     top: 0px;
     z-index: 20;
-
 }
 
 
@@ -137,7 +136,6 @@ header li {
 header a {
     text-decoration: none;
     color: white;
-
 }
 
 
@@ -152,12 +150,6 @@ header a {
     font-weight: bold;
     color: #2777ec;
 }
-
-
-
-
-
-
 
 body {
     margin: 90px auto;
@@ -181,7 +173,6 @@ h2 {
 }
 
 #about {
-
     position: relative;
     bottom: 30px;
     width: 50%;
@@ -199,7 +190,7 @@ h2 {
 }
 
 #portfolio p {
-        position: relative;
+    position: relative;
     bottom: 30px;
 }
 
