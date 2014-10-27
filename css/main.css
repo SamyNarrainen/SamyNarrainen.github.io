@@ -99,6 +99,7 @@ textarea {
 #wrapper {
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 header {
@@ -154,7 +155,6 @@ body {
     margin: 90px auto;
     text-align: center;
     background-color: #E9E9E9;
-    display: none;
 }
 
 body h1{
