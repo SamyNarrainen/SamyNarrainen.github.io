@@ -10,12 +10,11 @@ $(function() {
 
 $(function() {
 	window.scrollTo(0,0);
+	$("#wrapper").fadeIn("slow");
 });
 
 
 $(document).ready(function(){
-	$("#wrapper").fadeIn("slow");
-
 	$('a[href^="#"]').on('click',function (e) {
 		e.preventDefault();
 
