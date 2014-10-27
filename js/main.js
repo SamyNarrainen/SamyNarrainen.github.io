@@ -1,35 +1,38 @@
 
-    		$(function() {
-    		    $("#navigationBarList li a").hover(
-    		        function() {
-    		            $(this).animate({ color: "#2777EC" }, 'slow');
-    		        },function() {
-    		            $(this).animate({ color: "#FFFFFF" }, 'slow');
-    		    });
-    		});
+$(function() {
+    $("#navigationBarList li a").hover(
+        function() {
+            $(this).animate({ color: "#2777EC" }, 'slow');
+        },function() {
+            $(this).animate({ color: "#FFFFFF" }, 'slow');
+    });
+});
 
-    		$(function() {
-   				window.scrollTo(0,0);
-			});
+$(function() {
+	window.scrollTo(0,0);
+	$("body").fadeIn("slow");
+});
 
-		$(document).ready(function(){
-			$('a[href^="#"]').on('click',function (e) {
-	   			e.preventDefault();
+$(function() {
+	$(document).tooltip();
+});
 
-	    		var target = this.hash;
-	   			$target = $(target);
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+		e.preventDefault();
 
-	    		$('html, body').stop().animate({
-	        		'scrollTop': $target.offset({}).top
-	    		}, 900, 'swing', function () {
-	        		window.location.hash = target;
-	    		});
+		var target = this.hash;
+		$target = $(target);
 
-	    		$('html, body').stop().animate({
-     				'scrollTop': $target.offset().top
-				}, 900, 'swing');
-
-
-
-			});
+		$('html, body').stop().animate({
+    		'scrollTop': $target.offset({}).top
+		}, 900, 'swing', function () {
+    		window.location.hash = target;
 		});
+
+		$('html, body').stop().animate({
+			'scrollTop': $target.offset().top
+		}, 900, 'swing');
+
+	});
+});
