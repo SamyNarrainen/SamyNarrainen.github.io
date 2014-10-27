@@ -14,7 +14,6 @@ $(function() {
 
 
 $(document).ready(function(){
-	$("#wrapper").fadeIn("slow");
 
 	$('a[href^="#"]').on('click',function (e) {
 		e.preventDefault();
