@@ -139,8 +139,7 @@ header a {
 
 
 #bodyWrapper {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: auto;
 } 
 
 
@@ -189,11 +188,11 @@ h2 {
 
 #portfolio p {
     position: relative;
-    bottom: 30px;
+
 }
 
 iframe {
-    width: 100%;
+    width: 70%;
     height: 600px;
 }
 #portfolioTip {
